@@ -1,0 +1,59 @@
+﻿@model MunicipalServices.Models.ServiceRequest
+
+@{
+    ViewData["Title"] = "Request Details";
+    string statusClass = Model.Status switch
+    {
+        "Submitted" => "badge text-bg-warning",
+        "In Progress" => "badge text-bg-info",
+        "Resolved" => "badge text-bg-success",
+        _ => "badge text-bg-secondary"
+    };
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+    <h4 class="text-muted">Request #@Model.Id</h4>
+
+    <div class="card mt-4 shadow-sm">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">@Model.Category</h5>
+            <span class="@statusClass fs-6">@Model.Status</span>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-8">
+                    <p><strong>Location:</strong> @Model.Location</p>
+                    <p><strong>Description:</strong></p>
+                    <p>@Model.Description</p>
+                    <hr />
+                    <p><strong>Submitted By:</strong> @Model.User?.FullName</p>
+                    <p><strong>Submitted On:</strong> @Model.SubmittedDate.ToString("g")</p>
+
+                    @if (Model.Status == "Resolved")
+                    {
+                        <h5 class="mt-4">Resolution Details</h5>
+                        <hr />
+                        <p><strong>Resolved On:</strong> @Model.ResolutionDate?.ToString("g")</p>
+                        <p><strong>Notes:</strong></p>
+                        <p>@Model.ResolutionNotes</p>
+                    }
+                </div>
+                @if (!string.IsNullOrEmpty(Model.AttachmentPath))
+                {
+                    <div class="col-md-4">
+                        <h6>Attachment</h6>
+                        <a href="@Model.AttachmentPath" target="_blank">
+                            <img src="@Model.AttachmentPath" alt="Attachment for request #@Model.Id" class="img-fluid rounded shadow-sm" />
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="card-footer text-muted">
+            <a asp-action="List" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to List
+            </a>
+        </div>
+    </div>
+</div>

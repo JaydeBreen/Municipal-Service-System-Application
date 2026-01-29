@@ -1,0 +1,158 @@
+﻿﻿﻿﻿﻿@using System.Linq
+@* This view is strongly typed to an IEnumerable of ServiceRequest models, displaying a list of requests. *@
+@model IEnumerable<MunicipalServices.Models.ServiceRequest>
+@{
+    ViewData["Title"] = "Service Request Tracker";
+    // Determine the user's role from ViewData, which is set in the controller. This controls UI elements.
+    var userRole = ViewData["UserRole"] as string ?? "Citizen"; // Default to "Citizen" if role is not found
+    bool isStaff = userRole == "Staff";
+
+    // Retrieve lists for filter dropdowns from ViewData.
+    var categories = ViewData["Categories"] as List<string> ?? new List<string>();
+    var statuses = ViewData["Statuses"] as List<string> ?? new List<string>();
+
+    // Retrieve the current filter values to pre-populate the filter form fields.
+    var currentSearch = ViewData["CurrentSearch"] as string;
+    var currentCategory = ViewData["CurrentCategory"] as string;
+    var currentStatus = ViewData["CurrentStatus"] as string;
+}
+
+<div class="container mt-4">
+    @* Page header with a title and a button to navigate to the report creation page. *@
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>@ViewData["Title"]</h1>
+        <a asp-controller="ServiceRequests" asp-action="Report" class="btn btn-primary shadow-sm">
+            <i class="bi bi-plus-circle"></i> Report New Request
+        </a>
+    </div>
+
+    @* This form submits a GET request to the same 'List' action, allowing users to filter the service requests.
+       Using 'get' makes the filter state bookmarkable via the URL query string. *@
+    <form asp-controller="ServiceRequests" asp-action="List" method="get" class="mb-4 p-4 border rounded shadow-sm bg-light">
+        <h5 class="mb-3">Filter Requests</h5>
+        <div class="row g-3">
+            <div class="col-md-5">
+                <input type="text" name="search" class="form-control" placeholder="Search by Location or Description..." value="@currentSearch">
+            </div>
+            <div class="col-md-3">
+                @* Category filter dropdown, populated from ViewData. *@
+                <select name="category" class="form-select">
+                    <option value="">All Categories</option>
+                    @foreach (var cat in categories)
+                    {
+                        <option value="@cat" selected="@(cat == currentCategory)">@cat</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-2">
+                @* Status filter dropdown, populated from ViewData. *@
+                <select name="status" class="form-select">
+                    <option value="">All Statuses</option>
+                    @foreach (var stat in statuses)
+                    {
+                        <option value="@stat" selected="@(stat == currentStatus)">@stat</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-2 d-flex justify-content-end">
+                <button type="submit" class="btn btn-info w-100">Filter</button>
+            </div>
+        </div>
+        @* If any filter is active, a "Clear Filters" button is displayed to reset the view. *@
+        @if (!string.IsNullOrEmpty(currentSearch) || !string.IsNullOrEmpty(currentCategory) || !string.IsNullOrEmpty(currentStatus))
+        {
+            <div class="mt-3">
+                <a asp-controller="ServiceRequests" asp-action="List" class="btn btn-sm btn-outline-secondary">Clear Filters</a>
+            </div>
+        }
+    </form>
+
+    @* A conditional message is shown based on whether the user is a staff member or a regular citizen. *@
+    @if (isStaff)
+    {
+        <p class="text-danger lead">Staff View: Displaying all service requests.</p>
+    }
+    else
+    {
+        <p class="text-muted lead">Your requests are listed below. Click "Details" to view status updates.</p>
+    }
+
+    @* If the Model contains no service requests, display an informational message. *@
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info mt-4 text-center" role="alert">
+            <h4 class="alert-heading">No Requests Found</h4>
+            <p>You haven't submitted any service requests yet.</p>
+            <hr>
+            <p class="mb-0">Click the "Report New Request" button above to submit your first request.</p>
+        </div>
+    }
+    else
+    {
+        @* If there are service requests, display them in a responsive table. *@
+        <div class="table-responsive shadow-sm bg-white rounded">
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>ID</th>
+                        <th>Category</th>
+                        <th>Location</th>
+                        <th>Submitted</th>
+                        <th>Status</th>
+                        @if (isStaff)
+                        {
+                            @* The "Submitted By" column is only visible to staff members. *@
+                            <th>Submitted By</th>
+                        }
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        @* A switch expression determines the Bootstrap badge class based on the request's status for color-coding. *@
+                        string statusClass = item.Status switch
+                        {
+                            "Submitted" => "badge text-bg-warning",
+                            "In Progress" => "badge text-bg-info",
+                            "Resolved" => "badge text-bg-success",
+                            _ => "badge text-bg-secondary" // Default badge for any other status
+                        };
+
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Category</td>
+                            <td>@item.Location</td>
+                            <td>@item.SubmittedDate.ToShortDateString()</td>
+                            <td><span class="@statusClass">@item.Status</span></td>
+                            @if (isStaff)
+                            {
+                                @* Display the user's full name if the viewer is staff. The null-conditional operator (?) prevents errors if the User navigation property isn't loaded. *@
+                                <td>@item.User?.FullName</td>
+                            }
+                            <td>
+                                @* Action buttons are rendered based on the user's role. *@
+                                @if (isStaff)
+                                {
+                                    @* Staff can update the request *@
+                                    <a asp-controller="ServiceRequests" asp-action="StaffUpdate" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Update</a>
+                                }
+                                else
+                                {
+                                    @* Citizens can only view the details of their own requests. *@
+                                    <a asp-controller="ServiceRequests" asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Details</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        // Optional: Include any necessary JavaScript here, e.g., for filtering
+    </script>
+}

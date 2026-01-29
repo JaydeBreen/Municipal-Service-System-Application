@@ -1,0 +1,57 @@
+﻿@model MunicipalServices.Models.ServiceRequest
+@{
+    ViewData["Title"] = "Report a Service Request";
+}
+
+<div class="report-container p-4 shadow-lg rounded bg-white">
+    <h2>Report a Service Request</h2>
+    <p class="text-muted mb-4">Your report helps us improve the community.</p>
+
+    <form asp-action="Report" asp-controller="ServiceRequests" method="post" enctype="multipart/form-data">
+
+        @* This is the standard way to display all Model errors *@
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        @* Removed old ViewBag.Message display, as success is now handled by redirect/TempData *@
+
+        <div class="form-group mb-3">
+            <label asp-for="Location">Location (e.g., Street Address or Intersection)</label>
+            <input asp-for="Location" class="input-field form-control" required placeholder="123 Main Street" />
+            <span asp-validation-for="Location" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Category">Category of Issue</label>
+            <select asp-for="Category" class="input-field form-control" required>
+                <option value="">-- Select Category --</option>
+                <option value="Pothole">Pothole</option>
+                <option value="Water Leak">Water Leak</option>
+                <option value="Illegal Dumping">Illegal Dumping</option>
+                <option value="Street Light Out">Street Light Out</option>
+                <option value="Noise Complaint">Noise Complaint</option>
+                <option value="Other">Other</option>
+            </select>
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-4">
+            <label asp-for="Description">Issue Description</label>
+            <textarea asp-for="Description" rows="4" class="input-field form-control" required placeholder="Provide details about the problem, size, and severity."></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="attachment" class="form-label">Attach File (Photo/Video)</label>
+            <input type="file" name="attachment" id="attachment" class="form-control" />
+        </div>
+
+        <div class="button-row">
+            <button type="submit" class="btn btn-primary btn-lg">Submit Report</button>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back to Main Menu</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

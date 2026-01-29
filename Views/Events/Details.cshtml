@@ -1,0 +1,112 @@
+﻿@model MunicipalServices.Models.Event
+@using Microsoft.AspNetCore.Identity
+@using MunicipalServices.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Event Details: " + Model.Title;
+    bool isStaff = User.IsInRole("Staff") || User.IsInRole("Admin");
+
+    var priorityClass = Model.Priority == "High" ? "bg-red-500 text-white" :
+                        Model.Priority == "Medium" ? "bg-orange-500 text-white" :
+                        "bg-indigo-600 text-white";
+
+    var iconColorClass = Model.Priority == "High" ? "text-red-500" :
+                         Model.Priority == "Medium" ? "text-orange-500" :
+                         "text-indigo-600";
+}
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+
+<div class="container mx-auto p-4 md:p-8 font-sans pb-20">
+
+    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+
+        <div class="p-6 md:p-8 @priorityClass">
+            <h1 class="text-4xl font-extrabold flex items-center mb-1">
+                <i class="fas fa-bullhorn mr-3"></i> @Model.Title
+            </h1>
+            <div class="flex items-center space-x-4 text-sm font-semibold">
+                <span class="bg-white bg-opacity-20 px-2 py-0.5 rounded-md">
+                    Priority: @Model.Priority
+                </span>
+                <span class="bg-white bg-opacity-20 px-2 py-0.5 rounded-md">
+                    Category: @Model.Category
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6 md:p-8">
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+
+                <div class="lg:col-span-1 border-r lg:pr-8">
+                    <h2 class="text-2xl font-bold text-gray-700 mb-4 flex items-center pb-2 border-b">
+                        <i class="far fa-calendar-check mr-2 text-2xl @iconColorClass"></i> Key Details
+                    </h2>
+                    <dl class="space-y-5 text-gray-700">
+
+                        <div class="flex items-start">
+                            <dt class="w-1/3 font-semibold text-gray-600 flex items-center"><i class="fas fa-calendar-alt mr-3 text-xl @iconColorClass"></i> Date:</dt>
+                            <dd class="w-2/3 font-medium text-gray-800">@Model.EventDateTime.ToString("dd MMMM yyyy")</dd>
+                        </div>
+
+                        <div class="flex items-start">
+                            <dt class="w-1/3 font-semibold text-gray-600 flex items-center"><i class="fas fa-clock mr-3 text-xl @iconColorClass"></i> Time:</dt>
+                            <dd class="w-2/3 font-medium text-gray-800">@Model.EventDateTime.ToString("h:mm tt")</dd>
+                        </div>
+
+                        <div class="flex items-start">
+                            <dt class="w-1/3 font-semibold text-gray-600 flex items-center"><i class="fas fa-map-marker-alt mr-3 text-xl @iconColorClass"></i> Location:</dt>
+                            <dd class="w-2/3 font-medium text-gray-800">@Model.Location</dd>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-200 mt-4">
+                            <div class="flex items-start">
+                                <dt class="w-1/3 font-semibold text-gray-600 flex items-center"><i class="fas fa-plus-circle mr-3 text-xl @iconColorClass"></i> Posted:</dt>
+                                <dd class="w-2/3 text-gray-500 text-sm">@Model.PostedDate.ToString("dd MMM yyyy")</dd>
+                            </div>
+                        </div>
+
+                    </dl>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h2 class="text-2xl font-bold text-gray-700 mb-4 flex items-center pb-2 border-b">
+                        <i class="fas fa-file-alt mr-2 @iconColorClass"></i> Full Announcement Description
+                    </h2>
+                    <div class="p-5 bg-gray-50 rounded-lg min-h-[350px] shadow-inner border border-gray-200">
+                        <p class="text-base leading-relaxed text-gray-800 whitespace-pre-line">
+                            @Model.Description
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            @if (isStaff)
+            {
+                <div class="mt-8 pt-4 border-t border-gray-200 flex space-x-3">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="inline-flex items-center px-6 py-2 border border-transparent text-base font-medium rounded-md shadow-lg text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-150">
+                        <i class="fas fa-edit mr-2"></i> Edit Event
+                    </a>
+                    <a asp-action="Delete" asp-route-id="@Model.Id" class="inline-flex items-center px-6 py-2 border border-transparent text-base font-medium rounded-md shadow-lg text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-150">
+                        <i class="fas fa-trash-alt mr-2"></i> Delete Event
+                    </a>
+                </div>
+            }
+        </div>
+
+    </div>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-2xl p-4 z-10">
+        <div class="container mx-auto max-w-6xl flex justify-start">
+            <a asp-action="Index" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium py-2 px-4 rounded-md border border-indigo-200 hover:bg-indigo-50 transition duration-150 shadow-md">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to All Events
+            </a>
+        </div>
+    </div>
+</div>

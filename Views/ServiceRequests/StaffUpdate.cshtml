@@ -1,0 +1,99 @@
+﻿@model MunicipalServices.Models.ServiceRequest
+@using Microsoft.AspNetCore.Identity
+@using MunicipalServices.Models
+
+@* Inject services for user and sign-in management to access user roles and details. *@
+@inject UserManager<ApplicationUser> UserManager
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
+    // Set the title of the page.
+    ViewData["Title"] = "Update Request Status";
+    // Determine if the current user has a "Staff" or "Admin" role for authorization.
+    bool isStaff = User.IsInRole("Staff") || User.IsInRole("Admin");
+    // Cast ViewData to a strong type *before* using it in the loop to avoid expression tree errors.
+    var statusList = ViewData["Statuses"] as List<string> ?? new List<string>();
+}
+
+@if (!isStaff)
+{
+    // Security Check: If the user is not a staff member or admin, display an access denied message and hide the form.
+    <div class="alert alert-danger">Access Denied. Only staff members can view this page.</div>
+}
+else
+{
+    // Page Header: Display the main title and details of the specific service request being updated.
+    <h1>Update Request Status</h1>
+    <h4 class="text-primary">Request #@Model.Id: @Model.Category at @Model.Location</h4>
+    @* The null-conditional operator (?) prevents an error if the User object is not loaded. *@
+    <p class="text-muted">Submitted by: @Model.User?.FullName (@Model.SubmittedDate.ToShortDateString())</p>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-8">
+            @* The form posts back to the 'StaffUpdate' action in the ServiceRequestsController. *@
+            <form asp-action="StaffUpdate">
+                @* Displays a summary of model-level validation errors. *@
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                @* Hidden fields to ensure all model properties are posted back to the controller, preventing data loss on update. *@
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="Location" />
+                <input type="hidden" asp-for="Category" />
+                <input type="hidden" asp-for="Description" />
+                <input type="hidden" asp-for="AttachmentPath" />
+                <input type="hidden" asp-for="UserId" />
+                <input type="hidden" asp-for="SubmittedDate" />
+
+                <div class="form-group mb-3">
+                    <label class="control-label">Original Description</label>
+                    @* The original description is read-only to prevent modification. *@
+                    <textarea class="form-control" rows="3" readonly>@Model.Description</textarea>
+                </div>
+
+                @if (!string.IsNullOrEmpty(Model.AttachmentPath))
+                {
+                    // Display a link to the attachment only if one exists.
+                    <div class="form-group mb-3">
+                        <label class="control-label">Attachment</label>
+                        <p><a href="@Model.AttachmentPath" target="_blank">View Attached File</a></p>
+                    </div>
+                }
+
+                <div class="form-group mb-3">
+                    <label asp-for="Status" class="control-label">Change Status</label>
+                    @* The select dropdown for changing the request status. *@
+                    <select asp-for="Status" class="form-control">
+                        @* Dynamically populate the dropdown with statuses from ViewData. *@
+                        @foreach (var status in statusList)
+                        {
+                            <option value="@status" selected="@(status == Model.Status)">@status</option>
+                        }
+                    </select>
+                    @* Displays validation errors for the Status property. *@
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label asp-for="ResolutionNotes" class="control-label">Staff Resolution Notes</label>
+                    @* A textarea for staff to add notes about how the request was handled. *@
+                    <textarea asp-for="ResolutionNotes" class="form-control" rows="5" placeholder="Add details about the steps taken to resolve the request."></textarea>
+                    <span asp-validation-for="ResolutionNotes" class="text-danger"></span>
+                </div>
+
+                @* Action buttons to submit the form or return to the list view. *@
+                <div class="form-group mt-4">
+                    <input type="submit" value="Save Changes" class="btn btn-success" />
+                    <a asp-action="List" class="btn btn-secondary">Back to Tracker</a>
+                </div>
+            </form>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @{
+        // Includes the standard validation scripts partial view for client-side validation.
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

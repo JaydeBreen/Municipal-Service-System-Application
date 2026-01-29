@@ -1,0 +1,49 @@
+﻿﻿@{
+    ViewData["Title"] = "Attributions & Privacy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="container mt-4">
+    
+    @* This section provides attributions for third-party libraries and other resources used in the project. *@
+    <section id="attributions" class="mb-5">
+        <h2>Code Attributions and Acknowledgements</h2>
+        <p>
+            This project was developed using several open-source frameworks, libraries, and community resources.
+        </p> 
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5>Frameworks & Libraries</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    @* ASP.NET Core is the primary backend framework. *@
+                    <strong>ASP.NET Core:</strong> The web framework used to build this application.
+                    <br><a href="https://github.com/dotnet/aspnetcore" target="_blank">Official Repository (Apache 2.0 License)</a>
+                </li>
+                <li class="list-group-item">
+                    @* jQuery is used for client-side JavaScript functionality. *@
+                    <strong>jQuery:</strong> Used for client-side scripting and DOM manipulation.
+                    <br><em>The license is available in the project at <code>/wwwroot/lib/jquery/LICENSE.txt</code>.</em>
+                </li>
+                <li class="list-group-item">
+                    @* jQuery Validation Unobtrusive connects ASP.NET Core's model validation to jQuery on the client side. *@
+                    <strong>jQuery Validation Unobtrusive:</strong> Adds support for unobtrusive validation in ASP.NET Core.
+                    <br><em>The license is available in the project at <code>/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt</code>.</em>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5>Development & Learning Resources</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>AI Assistance:</strong> AI tools, including Gemini Code Assist, were used for, debugging, and conceptual clarification during development.</li>
+                <li class="list-group-item"><strong>Microsoft Docs &amp; Stack Overflow:</strong> Official documentation and community forums were regularly consulted for best practices, API references, and troubleshooting.</li>
+            </ul>
+        </div>
+    </section>
+
+</div>

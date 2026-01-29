@@ -1,0 +1,471 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\servicerequests\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\servicerequests\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\servicerequests\\report.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\servicerequests\\report.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\services\\eventdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:services\\eventdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\events\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\events\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\models\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:models\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\models\\searchhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:models\\searchhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\models\\eventsindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:models\\eventsindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\controllers\\servicerequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:controllers\\servicerequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\events\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\events\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\events\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\events\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\servicerequests\\staffupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\servicerequests\\staffupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|c:\\users\\darren\\source\\repos\\municipalservices\\migrations\\20251015095214_addpriorityandcategorytoevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238FAF5C-1DD3-472C-AC0B-D74D2A6F0E7B}|MunicipalServices.csproj|solutionrelative:migrations\\20251015095214_addpriorityandcategorytoevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\ServiceRequests\\List.cshtml",
+              "RelativeDocumentMoniker": "Views\\ServiceRequests\\List.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\ServiceRequests\\List.cshtml",
+              "RelativeToolTip": "Views\\ServiceRequests\\List.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T08:59:41.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T08:38:35.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "Models\\Event.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\Event.cs",
+              "RelativeToolTip": "Models\\Event.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA4wC4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T12:31:20.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EventsIndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\EventsIndexViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\EventsIndexViewModel.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\EventsIndexViewModel.cs",
+              "RelativeToolTip": "Models\\EventsIndexViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:27:55.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventDataService.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Services\\EventDataService.cs",
+              "RelativeDocumentMoniker": "Services\\EventDataService.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Services\\EventDataService.cs",
+              "RelativeToolTip": "Services\\EventDataService.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAmwAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:21:14.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Events\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Events\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Events\\Create.cshtml",
+              "RelativeToolTip": "Views\\Events\\Create.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T08:35:34.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Graph.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Graph.cs",
+              "RelativeDocumentMoniker": "Graph.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Graph.cs",
+              "RelativeToolTip": "Graph.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T09:56:52.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Report.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\ServiceRequests\\Report.cshtml",
+              "RelativeDocumentMoniker": "Views\\ServiceRequests\\Report.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\ServiceRequests\\Report.cshtml",
+              "RelativeToolTip": "Views\\ServiceRequests\\Report.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T08:58:40.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventsController.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "Controllers\\EventsController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T08:36:23.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:57:14.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\ServiceRequest.cs",
+              "RelativeDocumentMoniker": "Models\\ServiceRequest.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\ServiceRequest.cs",
+              "RelativeToolTip": "Models\\ServiceRequest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:46:02.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SearchHistory.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\SearchHistory.cs",
+              "RelativeDocumentMoniker": "Models\\SearchHistory.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\SearchHistory.cs",
+              "RelativeToolTip": "Models\\SearchHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:15:16.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T10:38:09.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T12:50:07.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:49:55.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ServiceRequestsController.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Controllers\\ServiceRequestsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServiceRequestsController.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Controllers\\ServiceRequestsController.cs",
+              "RelativeToolTip": "Controllers\\ServiceRequestsController.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAmwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:54:14.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T12:45:39.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Events\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Events\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Events\\Index.cshtml",
+              "RelativeToolTip": "Views\\Events\\Index.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwG4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T08:38:15.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Events\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Events\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Events\\Details.cshtml",
+              "RelativeToolTip": "Views\\Events\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T09:32:44.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T09:01:35.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "StaffUpdate.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\ServiceRequests\\StaffUpdate.cshtml",
+              "RelativeDocumentMoniker": "Views\\ServiceRequests\\StaffUpdate.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\ServiceRequests\\StaffUpdate.cshtml",
+              "RelativeToolTip": "Views\\ServiceRequests\\StaffUpdate.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T13:27:09.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T13:22:56.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T12:23:29.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20251015095214_AddPriorityAndCategoryToEvent.cs",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Migrations\\20251015095214_AddPriorityAndCategoryToEvent.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251015095214_AddPriorityAndCategoryToEvent.cs",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Migrations\\20251015095214_AddPriorityAndCategoryToEvent.cs",
+              "RelativeToolTip": "Migrations\\20251015095214_AddPriorityAndCategoryToEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:52:14.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T09:10:28.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAHgAAAAAAAAAAIBJwJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-27T09:00:50.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Darren\\source\\repos\\MunicipalServices\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-27T08:52:43.188Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+﻿@model MunicipalServices.Models.ServiceRequest
+
+@{
+    ViewData["Title"] = "Update Service Request";
+    var statuses = ViewData["Statuses"] as List<string> ?? new List<string>();
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+    <h4 class="text-muted">Request #@Model.Id</h4>
+
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h5>Request Details</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Category:</strong> @Model.Category</p>
+                    <p><strong>Location:</strong> @Model.Location</p>
+                    <p><strong>Description:</strong> @Model.Description</p>
+                    <p><strong>Submitted By:</strong> @Model.User?.FullName</p>
+                    <p><strong>Submitted On:</strong> @Model.SubmittedDate.ToString("g")</p>
+                </div>
+            </div>
+
+            <div class="card mt-4 shadow-sm">
+                <div class="card-header">
+                    <h5>Update Status</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="StaffUpdate">
+                        <input type="hidden" asp-for="Id" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Status" class="form-label"></label>
+                            <select asp-for="Status" class="form-select">
+                                @foreach (var stat in statuses)
+                                {
+                                    <option value="@stat">@stat</option>
+                                }
+                            </select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ResolutionNotes" class="form-label"></label>
+                            <textarea asp-for="ResolutionNotes" class="form-control" rows="4"></textarea>
+                            <span asp-validation-for="ResolutionNotes" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="List" class="btn btn-secondary">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
